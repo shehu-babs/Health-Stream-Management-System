@@ -14,14 +14,7 @@ import customtkinter as ctk
 username = sys.argv[1]
 fname = sys.argv[2]
 lname = sys.argv[3]
-# userrole=sys.argv[4]
-# useraddress = sys.argv[5]
-# userage=sys.argv[6]
-# userphone=sys.argv[7]
-# usergender =sys.argv[8]
-# user_name=sys.argv[9]
-# day_worked=sys.argv[10]
-# userid=sys.argv[11]
+
 
 # print(userid)
 def on_logout_label_click(event):
@@ -412,18 +405,6 @@ for child in mid_section.winfo_children():
 
 for child in top_left_nav.winfo_children():
     child.grid_configure(pady=(0, 10))
-
-
-# ctk.CTkLabel(profile, text=f'Name: {userdata[1]}'f'{userdata[2]}').grid(row=0, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'Current Role: {userdata[3]}').grid(row=1, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'Address: {userdata[4]}').grid(row=1, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'Age: {userdata[4]}').grid(row=1, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'PhoneNumber: {userdata[4]}').grid(row=1, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'Gender: {userdata[4]}').grid(row=1, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'User_Name: {userdata[4]}').grid(row=1, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'Created_At: {userdata[4]}').grid(row=1, column=0, padx=20)
-# ctk.CTkLabel(profile, text=f'USERID: {userdata[4]}').grid(row=1, column=0, padx=20)
-#
 
 
 dashboard_window.mainloop()

@@ -85,8 +85,7 @@ def print_id_card(frameM):
     save_path = os.path.join(save_directory, filename)
 
 
-    # save_path = filedialog.asksaveasfilename(defaultextension=".png",
-    #                                            filetypes=[("PNG files", "*.png")])
+    # saving path
     if save_path:
         image.save(save_path)
         try:

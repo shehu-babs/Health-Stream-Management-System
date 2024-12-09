@@ -28,22 +28,6 @@ def Add_Staff(event):
             messagebox.showerror("Database Error", f"Error fetching clinic IDs: {err}")
             return []
 
-    # def get_age_value():
-    #     # Assuming dob_value is in the format 'YYYY-MM-DD'
-    #     dob_value = entry_dob.get().strip()  # Get the date of birth input and remove leading/trailing spaces
-    #     # Parse the date of birth string into a date object
-    #     dob_date = datetime.strptime(dob_value, '%Y-%m-%d').date()
-    #     # Get the current date
-    #     current_date = date.today()
-    #     # Calculate age
-    #     age_value = current_date.year - dob_date.year
-    #     # Adjust if the birthday hasn't occurred yet this year
-    #     if (current_date.month, current_date.day) < (dob_date.month, dob_date.day):
-    #         age_value -= 1
-    #         entry_age.insert(0, str(age_value))
-    #         warning_label.configure(text=f"Age{age_value}", text_color='red', font=('Geneva', 16, 'bold'))
-    #
-    #     return
 
 
     def get_age_value(event=None):

@@ -197,35 +197,7 @@ label_info2.place(x=50, y=10)
 
 
 def update_tk():
-    """
-        Initializes the Tkinter GUI window for updating patient information.
 
-        This function sets up a form for updating patient details, including fields for
-        the patient's name, address, date of birth, phone number, gender, and emergency contact
-        details. The function contains the following nested functions:
-
-        - submit_patient_update: Updates patient data in the database based on input from the form.
-          Before proceeding, it prompts the user for confirmation as the action cannot be reversed.
-          If any required fields are empty, it displays an error message and halts the update.
-
-        - patient_search: Searches for a patient using a provided PatientID. If found, it populates
-          the form fields with the patient's details; otherwise, it displays a warning message.
-
-        GUI Elements:
-        - Label and Entry widgets for input fields (e.g., First Name, Last Name, Address, Phone Number).
-        - Date picker for the Date of Birth field.
-        - Combobox for Clinic selection.
-        - Radio buttons for Gender selection.
-        - Buttons for searching by PatientID and submitting updates.
-
-        Upon successful update or search, a message is displayed to inform the user of the outcome.
-
-        Parameters:
-        None
-
-        Returns:
-        None
-        """
     datewarning_lb.place_forget()
     def submit_patient_update():
         """
@@ -536,12 +508,7 @@ ctk.CTkRadioButton(frame1, text="Male", variable=gender_var, value="Male").grid(
 ctk.CTkRadioButton(frame1, text="Female", variable=gender_var, value="Female").grid(row=0, column=3, padx=(80, 0),
                                                                                     sticky="w", pady=(50, 10))
 
-# Clinic ID
-# label_clinic_id = ctk.CTkLabel(frame1, text="Clinic ID:", font=(Style.level_three_subheading))
-# label_clinic_id.grid(row=6, column=0, padx=10, pady=10, sticky="w")
-# clinic_ids = fetch_clinic_ids()  # Fetch clinic IDs from the database
-# combobox_clinic_id = ttk.Combobox(frame1, values=clinic_ids, font=(Style.level_three_subheading), state="readonly")
-# combobox_clinic_id.grid(row=6, column=1, padx=10, pady=10)
+
 label_clinic_id = ctk.CTkLabel(frame1, text="Clinic Name:", font=(Style.level_three_subheading))
 label_clinic_id.grid(row=1, column=2, padx=10, pady=10, sticky="w")
 clinic_data = fetch_clinic_ids()  # Fetch clinic IDs from the database

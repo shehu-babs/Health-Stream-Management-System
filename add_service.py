@@ -11,11 +11,6 @@ from PIL import Image, ImageTk
 username = sys.argv[1]
 
 
-# def add_service():
-
-
-
-
 def add_service():
     """Update the password for a specific username or phone number in the database."""
     service_name = service_name_entry.get()
@@ -273,10 +268,5 @@ update_button2.grid(row=4, column=1, pady=20, sticky='e', padx=0)
 delete_button2 = ctk.CTkButton(frame2, text="Delete Service", command=delete_service_data)
 delete_button2.grid(row=4, column=0, pady=20, sticky='e', padx=0)
 
-# Bind Enter key to pull_service_data function
-
-# service_name_entry2.bind("<Return>", lambda event: update_service_data())
-# cost_entry2.bind("<Return>", lambda event: update_service_data())
-# description_entry2.bind("<Return>", lambda event: update_service_data())
 
 update_window.mainloop()

@@ -12,7 +12,6 @@ username = sys.argv[1]
 full_name = []
 
 
-# def run_diagnosis(event):
 # Function to fetch patient details based on Patient Number
 def fetch_patient():
     patient_id = entry_patient_id.get()

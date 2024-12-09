@@ -386,16 +386,7 @@ dashboard_reg_label.grid(row=1, column=1, pady=(0,70))
 dashboard_reg_label.bind("<Button-1>", lambda e: call_add_patient(e))
 dashboard_reg_image.bind("<Button-1>", lambda e: call_add_patient(e))
 
-# MANAGE SERVICE CATALOG
-# dash_service_image = resize_image((80, 80), 'images/manage_service.png')
-# # Create a Label widget with the resized image
-# dashboard_service_image = tk.Label(mid_section, image=dash_service_image, bg="white")
-# dashboard_service_image.grid(row=0, column=2)
-# dashboard_service_label = tk.Label(mid_section, text="Manage Service", font=Style.subheading, cursor="hand2",
-#                                    bg="white")
-# dashboard_service_label.grid(row=1, column=2, pady=(0, 70))
-# dashboard_service_label.bind("<Button-1>", )
-# dashboard_service_image.bind("<Button-1>", )
+
 
 # VIEW Medical REPORT AREA
 dash_diag_image = resize_image((80, 80), 'images/doctor-patient.png')

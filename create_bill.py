@@ -11,10 +11,6 @@ from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 
 from operation import  fetch_patient_bill_history, Style, generate_pdf,show_notification,show_frame,auto_pdf
-# from search_patient import patient_id
-
-
-# from search_patient import patient_id
 
 
 def close_out():
@@ -180,26 +176,6 @@ p_billdate.place(x=20, y=65)
 p_netpay = ctk.CTkLabel(visit_info, text='Netpay', font=('Geneva',12,'bold',),text_color=Style.page_heading_color)
 p_netpay.place(x=20, y=87)
 
-# def pdf_gen():
-#     try:
-#         item_to_pdf = [
-#             bill_title,
-#             patient_name,
-#             billid,
-#             checkby,
-#             patient_idd,
-#             paddress,
-#             pservices,
-#             cost,
-#             ncost,
-#             clinicname,
-#             clinicaddress,
-#             visitid
-#         ]
-#         auto_pdf(item_to_pdf, filename=billid, title=bill_title)
-#     except Exception as e:
-#         messagebox.showinfo('Oops', f'No patient record selected:')
-#         return
 
 print_btn =ctk.CTkButton(root, text='🖨️ Print Bill', command=lambda: generate_pdf(bill_title,patient_name, billid, checkby, patient_idd,paddress, pservices, cost, cal_cost,clinicname,clinicaddress,visitid)).place(x=280, y=531)
 pay_btn =ctk.CTkButton(root, text='🄳🄴🅃🄰🄸🄻 🄿🄰🅈', command=lambda: show_frame2()).place(x=430, y=531)
@@ -287,9 +263,7 @@ final_total.place(x=400, y=420)
 
 # def bill_structure():
 def dis_set():
-    # ftotal_dis = bill_data()
 
-    # print(f"Selected value: {selected_value}")
 
     try:
         # ftotal_dis = cost_value
@@ -340,9 +314,6 @@ def bill_data():
         medication = 'See your \nPharmacist'
         pp_med_total.configure(text=medication)
 
-        # [25, 'P0031', datetime.date(2024, 11, 6), 'Sick', 'Pscan, QQscan', 'Sick', 'shehu1i', 'wasila', 'shehu',
-        #  '12 man man', datetime.date(2024, 11, 4), '22222', 'East End Health Services', '321 Pine St, Cityville', 14,
-        #  Decimal('890.00'), datetime.date(2024, 11, 6), None]
 
         # Convert values to Decimal
         subTotal = Decimal(cost_value) + Decimal(general_charge)

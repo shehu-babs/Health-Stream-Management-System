@@ -152,14 +152,6 @@ search_button.grid(row=0, column=2, sticky="e")
 record_button = tk.Button(frame1, text="View All Staff", command=staff_details)
 record_button.grid(row=0, column=3, padx=5, pady=5, sticky="w")
 
-# Treeview for displaying staff records
-# columns = ("first_name", "last_name", "email", "date")
-# tree = ttk.Treeview(frame1, columns=columns, show="headings")
-# tree.heading("first_name", text="First Name")
-# tree.heading("last_name", text="Last Name")
-# tree.heading("email", text="Email")
-# tree.heading("date", text="Date")
-# tree.grid(row=1, column=0, columnspan=4, padx=10, pady=10, sticky="nsew")
 
 # Treeview for displaying staff records
 columns = ("First_name", "Last_name", "Staff_Address", "DateOfBirth", "Age", "PhoneNumber", "Gender", "ClinicID")

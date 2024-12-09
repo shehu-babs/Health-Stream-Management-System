@@ -8,48 +8,6 @@ import customtkinter as ctk
 
 
 
-# def passwordchange():
-    # def update_password():
-    #     """Update the password for a specific username or phone number in the database."""
-    #     username = username_entry.get()
-    #     new_username = new_username_entry.get()
-    #     new_password = new_password_entry.get()
-    #
-    #     conn = connect_to_database()
-    #     cursor = conn.cursor()
-    #
-    #     sql = "SELECT User_Name FROM STAFF"
-    #     cursor.execute(sql)
-    #     result = cursor.fetchall()
-    #     print(result)
-    #     cleaned_user_db = [user[0] for user in result if user[0] is not None]
-    #     print(cleaned_user_db)
-    #
-    #     if username in cleaned_user_db:
-    #         messagebox.showwarning("Registration Failed", "Username already exists.")
-    #         return
-    #     else:
-    #         # Update password for the given username or phone number, and set the username if it's empty
-    #         sql = """
-    #             UPDATE STAFF
-    #             SET Password = %s, User_Name = %s,
-    #                 User_Name = CASE WHEN User_Name = '' THEN %s ELSE User_Name END
-    #             WHERE (User_Name = %s OR PhoneNumber = %s)
-    #         """
-    #         cursor.execute(sql, (new_password, new_username, new_username, username, username))
-    #         conn.commit()
-    #
-    #         if cursor.rowcount > 0:
-    #             messagebox.showinfo("Success", "Password updated successfully!")
-    #         else:
-    #             messagebox.showerror("Error", "Username or phone number not found, Make sure to enter the correct info\n password unchanged.")
-    #
-    #         cursor.close()
-    #         conn.close()
-    #
-    #     # subprocess.Popen(['python3', 'signin.py'])
-    #     update_window.withdraw()
-    #     return
 
 def show_passwordd():
     """
