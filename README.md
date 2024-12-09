@@ -1,4 +1,4 @@
 # Health-Stream-Management-System
-Personal Capstone Project
+Capstone Project
 
 The project document will be posted soon!
