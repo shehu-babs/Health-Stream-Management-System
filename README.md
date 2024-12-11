@@ -1,4 +1,6 @@
 # Health-Stream-Management-System
 Capstone Project
 
-The project document will be posted soon!
+
+Project Execution Video
+https://youtu.be/p7IVLtg-HWU
